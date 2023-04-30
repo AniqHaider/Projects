@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(151, 236, 14);
+}
+h1 {
+  font-size: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+  font-size: 35px;
+  color: #b836f4;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 400px;
+  height: 380px;
+  margin: 40px auto;
+  background-color: white;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #ccc;
+}
+#reset {
+  width: 400px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  font-size: 30px;
+  border-radius: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+#reset:hover {
+  background-color: #724caf;
+  color: black;
+}
